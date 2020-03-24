@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+	font-family: 'Paddis_Handwritten';
+	src: url('./font/Paddis_Handwritten.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
