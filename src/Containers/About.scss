@@ -1,0 +1,27 @@
+#about {
+    width: 100%;
+    padding: 2rem;
+    background-image: url(./../img/about.jpg);
+}
+
+.about-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.about-img {
+    width: 45%;
+}
+
+.about-img img {
+    width: 22rem;
+    height: 18rem;
+    border-radius: 2rem;
+}
+
+.about-content {
+    width: 45%;
+}

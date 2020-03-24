@@ -1,0 +1,56 @@
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+}
+
+.header {
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+}
+
+// .header-img {
+    
+// }
+
+.ant-anchor-wrapper {
+    background-color: none;
+}
+
+.left-menu {
+    position: absolute;
+    left: 2rem;
+}
+
+.ant-affix {
+    left: 0;
+}
+
+.header-social {
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+}
+
+.header-img-mikki {
+    width: 15rem;
+    height: 15rem;
+    background-image: url(./../img/mikki.jpg);
+    // background-repeat: no-repeat;
+    background-size: cover;
+}

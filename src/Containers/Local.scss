@@ -1,0 +1,24 @@
+#local {
+    width: 100%;
+    padding: 2rem;
+    background-image: url(./../img/studio.jpg);
+}
+
+.local-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.local-map {
+    width: 45%;
+    min-height: 20rem;
+    margin-left: 5rem;
+}
+
+.local-map div{
+   width: 100%!important;
+   height: 100%!important;
+}

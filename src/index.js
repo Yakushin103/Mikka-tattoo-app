@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// # SCSS
+// import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 ReactDOM.render(
   <React.StrictMode>
