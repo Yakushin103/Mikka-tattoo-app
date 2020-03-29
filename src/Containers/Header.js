@@ -5,14 +5,19 @@ import RigthMenu from './../Components/Header/RigthMenu'
 import MainImg from './../Components/Header/MainImg'
 import './Header.scss';
 
-const Header = () => {
+const Header = ({theme, setTheme}) => {
     return (
-        <header id='header'>
+        <header id='header' className='black-theme'>
+            <div className={ theme ? 'black' : 'white' }>
             <HeaderMenu />
             <div className='header-row'>
-            <LeftMenu />
+            <LeftMenu
+            theme={theme}
+            setTheme={setTheme}
+            />
             <RigthMenu />
             <MainImg />
+            </div>
             </div>
         </header>
     );

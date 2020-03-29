@@ -1,7 +1,70 @@
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+
+@mixin phones {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
 #local {
     width: 100%;
-    padding: 2rem;
     background-image: url(./../img/studio.jpg);
+}
+
+#local .black h2 {
+    color: white;
+    font-family: 'Paddis_Handwritten';
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 8px white, 0 0 10px blue, 0 0 12px blue, 0 0 13px blue, 0 0 14px blue, 0 0 15px blue;
+    font-size: 3rem;
+
+    @include laptop {
+        font-size: 2rem;
+    }
+
+    @include tablets {
+        font-size: 1.5rem;
+    }
+
+    @include phones {
+        font-size: 1rem;
+    }
+}
+
+#local .white h2 {
+    font-family: 'Paddis_Handwritten';
+    font-size: 3rem;
+    color: rgb(24, 144, 255);
+    font-weight: bold;
+
+    @include laptop {
+        font-size: 2rem;
+    }
+
+    @include tablets {
+        font-size: 1.5rem;
+    }
+
+    @include phones {
+        font-size: 1rem;
+    }
 }
 
 .local-items {
@@ -10,15 +73,49 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5rem;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .local-map {
     width: 45%;
     min-height: 20rem;
     margin-left: 5rem;
+
+    @include tablets {
+        width: 70%;
+        min-height: 20rem;
+        margin-left: 0rem;
+    }
 }
 
 .local-map div{
    width: 100%!important;
    height: 100%!important;
+}
+
+.local-content {
+    width: 45%;
+
+     @include tablets {
+        width: 70%;
+        margin-top: 1rem;
+    }
+}
+
+.black .local-content p {
+    color: white;
+}
+
+.white .local-content {
+    background:rgba(255, 255, 255, .6);
+    border-radius: 2rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    opacity: .9;
+    & p {
+        font-weight: bold;
+    }
 }

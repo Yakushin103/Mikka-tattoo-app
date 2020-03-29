@@ -99,7 +99,9 @@ const Gallery = () => {
 
     return (
         <>
-        <ImageGallery items={images} />
+        <ImageGallery 
+        items={images}
+         />
         </>
     );
 }

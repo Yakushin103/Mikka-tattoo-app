@@ -7,7 +7,8 @@ const HeaderMenu = () => {
                <h2>Mikka tattoo</h2>
            </div>
            <div className="header-center">
-               Тату в Ростове
+               <p>#tattoorostov</p>
+               
            </div>
            <div className="header-number">
                <a href='tel: +79888950008'>Набирай: +79888950008</a>

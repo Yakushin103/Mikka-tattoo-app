@@ -1,17 +1,107 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+
+@mixin phones {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
 #carousel {
     width: 100%;
     // height: 100vh;
-    padding: 2rem;
+    background-color: black;
+    
     background-image: url(./../img/bg-work.jpg);
+    
+    
+}
+
+.black {
+    width: 100%;
+    padding: 2rem;
+    background: rgba( 0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-gallery {
+    width: 70%;
+}
+
+#carousel .black h2 {
+    color: white;
+    font-family: 'Paddis_Handwritten';
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 8px white, 0 0 10px blue, 0 0 12px blue, 0 0 13px blue, 0 0 14px blue, 0 0 15px blue;
+    font-size: 3rem;
+
+    @include laptop {
+        font-size: 2rem;
+    }
+
+    @include tablets {
+        font-size: 1.5rem;
+    }
+
+    @include phones {
+        font-size: 1rem;
+    }
+}
+
+#carousel .white h2 {
+    font-family: 'Paddis_Handwritten';
+    font-size: 3rem;
+    color: rgb(24, 144, 255);
+    font-weight: bold;
+
+    @include laptop {
+        font-size: 2rem;
+    }
+
+    @include tablets {
+        font-size: 1.5rem;
+    }
+
+    @include phones {
+        font-size: 1rem;
+    }
 }
 
 .image-gallery-thumbnail .image-gallery-thumbnail-image {
+    overflow: hidden;
     max-height: 7rem;
 }
 
 .image-gallery-thumbnails-wrapper {
-    max-width: 80%;
+    overflow: hidden;
+    max-width: 100%;
     margin: 0 auto;
 }
